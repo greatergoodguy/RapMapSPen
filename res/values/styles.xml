@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <style name="theme_rapmap" parent="android:style/Theme.Holo.Light.NoActionBar">
+    <style name="theme_base" parent="android:style/Theme.Holo.Light.NoActionBar" >
+        <item name="background_secondary">@color/white</item>
+    </style>
+    
+    <style name="theme_sadcrow" parent="theme_base">
          <item name="android:background">@color/sadcrow_purple_dark</item>
+         <item name="android:textColor">@color/sadcrow_purple_lightest</item>
+         <item name="background_secondary">@color/sadcrow_purple</item>
+    </style>
+
+    <style name="theme_dreammagnet" parent="theme_base">
+         <item name="android:background">@color/dreammagnet_blue_darkest</item>
+         <item name="android:textColor">@color/dreammagnet_blue_lightest</item>
+         <item name="background_secondary">@color/dreammagnet_blue_dark</item>
     </style>
     
      <style name="block">

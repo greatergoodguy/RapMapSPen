@@ -7,7 +7,7 @@
 
     <View 
         style="@style/fill"
-        android:background="@color/sadcrow_purple"/>
+        android:background="?attr/background_secondary"/>
     
     <TextView
         android:id="@+id/editmenuitem_name"
@@ -17,7 +17,6 @@
         android:layout_centerInParent="true"
         android:text="EDIT MENU ITEM NAME"
         android:textSize="24sp"
-        android:textColor="@color/sadcrow_purple_lightest"
         android:background="@color/transparent" />
 
 </RelativeLayout>

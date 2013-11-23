@@ -282,10 +282,6 @@ public class DragDropGrid extends ViewGroup implements OnTouchListener {
     private void manageSwapPosition(int x, int y) {
         int target = getTargetAtCoor(x, y);
         if (childHasMoved(target) && target != lastTarget) {
-        	
-        	Log.d("DragDropGrid", "Swap x, y: " + x + ", " + y);
-        	Log.d("DragDropGrid", "target: " + target);
-        	
             animateGap(target);
             lastTarget = target;
         }

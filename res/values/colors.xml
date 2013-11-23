@@ -11,5 +11,11 @@
 	<color name="sadcrow_purple_dark">#4A315B</color>
 	<color name="sadcrow_purple_darkest">#141416</color>
 	
+	<color name="dreammagnet_blue_lightest">#00DFFC</color>
+	<color name="dreammagnet_blue_light">#00B4CC</color>
+	<color name="dreammagnet_blue">#008C9E</color>
+	<color name="dreammagnet_blue_dark">#005F6B</color>
+	<color name="dreammagnet_blue_darkest">#343838</color>
+	
 	
 </resources>
