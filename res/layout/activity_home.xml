@@ -6,6 +6,13 @@
         style="@style/wrap" />
 
     <Button
+        android:id="@+id/editmenu_button_minieditor" 
+        style="@style/wrap"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:text="Mini Editor"/>
+    
+    <Button
         android:id="@+id/editmenu_button_changetheme" 
         style="@style/wrap"
         android:layout_alignParentRight="true"
