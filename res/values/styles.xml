@@ -17,6 +17,31 @@
          <item name="background_secondary">@color/dreammagnet_blue_dark</item>
     </style>
     
+    
+    <style name="theme_circlingsun" parent="theme_base">
+         <item name="android:background">@color/circlingsun_orange</item>
+         <item name="android:textColor">@color/circlingsun_purple</item>
+         <item name="background_secondary">@color/circlingsun_gold</item>
+    </style>
+    
+    <style name="theme_antiquebird" parent="theme_base">
+         <item name="android:background">@color/antiquebird_red_light</item>
+         <item name="android:textColor">@color/antiquebird_brown</item>
+         <item name="background_secondary">@color/antiquebird_green_lush</item>
+    </style>
+    
+    <style name="theme_midnight" parent="theme_base">
+         <item name="android:background">@color/midnight_purple</item>
+         <item name="android:textColor">@color/midnight_black</item>
+         <item name="background_secondary">@color/midnight_purple_light</item>
+    </style>
+    
+    <style name="theme_romantic" parent="theme_base">
+         <item name="android:background">@color/romantic_pink_dark</item>
+         <item name="android:textColor">@color/romantic_black</item>
+         <item name="background_secondary">@color/romantic_pink</item>
+    </style>
+    
      <style name="block">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">fill_parent</item>

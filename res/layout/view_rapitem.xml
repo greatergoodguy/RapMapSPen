@@ -2,11 +2,36 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="179dp"
     android:layout_height="160dp"
-    android:padding="5dp" 
-    android:background="@drawable/background_border">
-
+    android:background="@color/transparent">
+    
     <View 
         style="@style/fill"
+        android:layout_margin="10dp"
+        android:background="?attr/background_secondary" />
+
+    <!-- Border -->
+    <View 
+        style="@style/block"
+        android:layout_height="4dp"
+        android:layout_alignParentTop="true"
+        android:background="?attr/background_secondary"/>
+    
+    <View 
+        style="@style/block"
+        android:layout_height="@dimen/rapitem_border"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/background_secondary"/>
+    
+    <View 
+        style="@style/vblock"
+        android:layout_width="@dimen/rapitem_border"
+        android:layout_alignParentLeft="true"
+        android:background="?attr/background_secondary"/>
+    
+    <View 
+        style="@style/block"
+        android:layout_width="@dimen/rapitem_border"
+        android:layout_alignParentRight="true"
         android:background="?attr/background_secondary"/>
     
     <TextView
@@ -16,7 +41,8 @@
         android:paddingBottom="16dp"
         android:layout_centerInParent="true"
         android:text="EDIT MENU ITEM NAME"
-        android:textSize="24sp"
+        android:textSize="28sp"
+        android:textStyle="bold"
         android:background="@color/transparent" />
 
 </RelativeLayout>

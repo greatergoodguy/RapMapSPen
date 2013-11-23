@@ -5,6 +5,8 @@
 	<color name="transparent">#00000000</color>
 	<color name="background">#00000000</color>
 	
+	<!-- Theme Colors -->
+	
 	<color name="sadcrow_purple_lightest">#B3BBD2</color>
 	<color name="sadcrow_purple_light">#8992B1</color>
 	<color name="sadcrow_purple">#39497D</color>
@@ -17,5 +19,29 @@
 	<color name="dreammagnet_blue_dark">#005F6B</color>
 	<color name="dreammagnet_blue_darkest">#343838</color>
 	
+	<color name="circlingsun_blue">#4E67BA</color>
+	<color name="circlingsun_purple">#AC6CB8</color>
+	<color name="circlingsun_pink">#E6879C</color>
+	<color name="circlingsun_orange">#FFA587</color>
+	<color name="circlingsun_gold">#FFD480</color>
+	
+	<color name="antiquebird_red_sharp">#F06D61</color>
+	<color name="antiquebird_red_light">#DA825F</color>
+	<color name="antiquebird_brown">#C4975C</color>
+	<color name="antiquebird_green_swamp">#A8AB7B</color>
+	<color name="antiquebird_green_lush">#8CBF99</color>
+	
+	
+	<color name="midnight_purple_lightest">#9D2053</color>
+	<color name="midnight_purple_light">#7A1E48</color>
+	<color name="midnight_purple">#571B3C</color>
+	<color name="midnight_purple_dark">#341931</color>
+	<color name="midnight_black">#111625</color>
+	
+	<color name="romantic_pink_lightest">#FFEAF2</color>
+	<color name="romantic_pink_light">#FCD9E5</color>
+	<color name="romantic_pink">#FBC5D8</color>
+	<color name="romantic_pink_dark">#F1396D</color>
+	<color name="romantic_black">#382F32</color>
 	
 </resources>
