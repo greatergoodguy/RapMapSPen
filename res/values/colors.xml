@@ -5,10 +5,11 @@
 	<color name="transparent">#00000000</color>
 	<color name="background">#00000000</color>
 	
-	<color name="blue_dark_polvere">#476A92</color>
-	<color name="purple_lilac">#A5A5E1</color>
-	<color name="pink_ohlala">#FDBAB2</color>
-	<color name="tan_dreamsreality">#FBF3DC</color>
+	<color name="sadcrow_purple_lightest">#B3BBD2</color>
+	<color name="sadcrow_purple_light">#8992B1</color>
+	<color name="sadcrow_purple">#39497D</color>
+	<color name="sadcrow_purple_dark">#4A315B</color>
+	<color name="sadcrow_purple_darkest">#141416</color>
 	
 	
 </resources>

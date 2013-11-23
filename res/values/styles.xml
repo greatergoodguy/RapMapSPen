@@ -2,6 +2,7 @@
 <resources>
 
     <style name="theme_rapmap" parent="android:style/Theme.Holo.Light.NoActionBar">
+         <item name="android:background">@color/sadcrow_purple_dark</item>
     </style>
     
      <style name="block">
