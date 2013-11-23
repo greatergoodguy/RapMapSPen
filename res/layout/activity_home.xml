@@ -1,0 +1,10 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fill"
+    android:background="#0099cc" >
+
+    <com.burstingbrains.rapmap.view.dragdropgrid.DragDropGrid
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/editmenu_gridview"
+        style="@style/fill" />
+
+</LinearLayout>
