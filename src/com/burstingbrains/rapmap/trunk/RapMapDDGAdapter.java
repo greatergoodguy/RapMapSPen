@@ -49,8 +49,8 @@ public class RapMapDDGAdapter extends DragDropGridAdapter {
         itemViews.add(new RapItemView(context, "Item 20"));
         itemViews.add(new RapItemView(context, "Item 21"));
         itemViews.add(new RapItemView(context, "Item 22"));
-        itemViews.add(new RapItemView(context, "Item 23"));
-        itemViews.add(new RapItemView(context, "Item 24"));
+        //itemViews.add(new RapItemView(context, "Item 23"));
+        //itemViews.add(new RapItemView(context, "Item 24"));
     }
 
     @Override

@@ -3,5 +3,12 @@
     <color name="black_overlay">#66000000</color>
     <color name="white">#FFFFFF</color>
 	<color name="transparent">#00000000</color>
+	<color name="background">#00000000</color>
+	
+	<color name="blue_dark_polvere">#476A92</color>
+	<color name="purple_lilac">#A5A5E1</color>
+	<color name="pink_ohlala">#FDBAB2</color>
+	<color name="tan_dreamsreality">#FBF3DC</color>
+	
 	
 </resources>
