@@ -1,48 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <style name="theme_base" parent="android:style/Theme.Holo.Light.NoActionBar" >
+    <style name="theme_base" parent="android:style/Theme.Holo.Light.NoActionBar">
         <item name="background_secondary">@color/white</item>
     </style>
-    
+
     <style name="theme_sadcrow" parent="theme_base">
-         <item name="android:background">@color/sadcrow_purple_dark</item>
-         <item name="android:textColor">@color/sadcrow_purple_lightest</item>
-         <item name="background_secondary">@color/sadcrow_purple</item>
+        <item name="android:background">@color/sadcrow_purple_dark</item>
+        <item name="android:textColor">@color/sadcrow_purple_lightest</item>
+        <item name="background_secondary">@color/sadcrow_purple</item>
     </style>
 
     <style name="theme_dreammagnet" parent="theme_base">
-         <item name="android:background">@color/dreammagnet_blue_darkest</item>
-         <item name="android:textColor">@color/dreammagnet_blue_lightest</item>
-         <item name="background_secondary">@color/dreammagnet_blue_dark</item>
+        <item name="android:background">@color/dreammagnet_blue_darkest</item>
+        <item name="android:textColor">@color/dreammagnet_blue_lightest</item>
+        <item name="background_secondary">@color/dreammagnet_blue_dark</item>
     </style>
-    
-    
+
     <style name="theme_circlingsun" parent="theme_base">
-         <item name="android:background">@color/circlingsun_orange</item>
-         <item name="android:textColor">@color/circlingsun_purple</item>
-         <item name="background_secondary">@color/circlingsun_gold</item>
+        <item name="android:background">@color/circlingsun_orange</item>
+        <item name="android:textColor">@color/circlingsun_purple</item>
+        <item name="background_secondary">@color/circlingsun_gold</item>
     </style>
-    
+
     <style name="theme_antiquebird" parent="theme_base">
-         <item name="android:background">@color/antiquebird_red_light</item>
-         <item name="android:textColor">@color/antiquebird_brown</item>
-         <item name="background_secondary">@color/antiquebird_green_lush</item>
+        <item name="android:background">@color/antiquebird_red_light</item>
+        <item name="android:textColor">@color/antiquebird_brown</item>
+        <item name="background_secondary">@color/antiquebird_green_lush</item>
     </style>
-    
+
     <style name="theme_midnight" parent="theme_base">
-         <item name="android:background">@color/midnight_purple</item>
-         <item name="android:textColor">@color/midnight_black</item>
-         <item name="background_secondary">@color/midnight_purple_light</item>
+        <item name="android:background">@color/midnight_purple</item>
+        <item name="android:textColor">@color/midnight_black</item>
+        <item name="background_secondary">@color/midnight_purple_light</item>
     </style>
-    
+
     <style name="theme_romantic" parent="theme_base">
-         <item name="android:background">@color/romantic_pink_dark</item>
-         <item name="android:textColor">@color/romantic_black</item>
-         <item name="background_secondary">@color/romantic_pink</item>
+        <item name="android:background">@color/romantic_pink_dark</item>
+        <item name="android:textColor">@color/romantic_black</item>
+        <item name="background_secondary">@color/romantic_pink</item>
     </style>
-    
-     <style name="block">
+
+    <style name="block">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">fill_parent</item>
     </style>
@@ -60,6 +59,22 @@
     <style name="fill">
         <item name="android:layout_height">fill_parent</item>
         <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <!-- Text -->
+    <style name="text_base" parent="wrap">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+   
+    <style name="text_header" parent="text_base">
+        <item name="android:textSize">52sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_subheader" parent="text_base">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
     
 </resources>
