@@ -77,6 +77,9 @@ public class RapMapDDGAdapter extends DragDropGridAdapter {
 
     @Override
     public void swapItems(int itemIndexA, int itemIndexB) {
+    	if(itemIndexA >= itemViews.size())	return;
+    	if(itemIndexB >= itemViews.size())	return;
+    	
         Collections.swap(itemViews, itemIndexA, itemIndexB);
     }
 
