@@ -36,7 +36,6 @@ public class RapItemView extends LinearLayout{
 
 	private void initView(Context context) {
         View.inflate(context, R.layout.view_rapitem, this);
-        
         nameTV = ((TextView) findViewById(R.id.editmenuitem_name));
     }
 }

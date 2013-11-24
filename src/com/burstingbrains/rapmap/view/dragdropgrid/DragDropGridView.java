@@ -681,9 +681,19 @@ public class DragDropGridView extends ViewGroup implements OnTouchListener {
     public void setDraggable(boolean isDraggable) {
     	if(isDraggable){
     		setOnTouchListener(this);
+    		setClickableForChildren(false);
     	}
     	else{
     		setOnTouchListener(null);
+    		setClickableForChildren(true);
     	}
+    }
+    
+    private void setClickableForChildren(boolean isClickable) {
+    	
+    	for(int i=0; i<getChildCount(); i++) {
+			View childView = getChildAt(i);
+			childView.setClickable(isClickable);
+		}
     }
 }
