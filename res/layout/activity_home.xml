@@ -1,36 +1,48 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/fill" >
 
-    <com.burstingbrains.rapmap.view.dragdropgrid.DragDropGrid
-        android:id="@+id/editmenu_gridview"
+    <com.burstingbrains.rapmap.view.dragdropgrid.DragDropGridView
+        android:id="@+id/home_gridview"
         style="@style/wrap"
         android:layout_marginRight="200dp" />
 
+    <View 
+        style="@style/vblock"
+        android:layout_width="200dp"
+        android:layout_alignParentRight="true"
+        android:background="@color/black_overlay"/>
+    
     <TextView
+        android:id="@+id/home_header_tv"
         style="@style/text_header"
         android:text="EDIT MODE"
         android:layout_alignParentRight="true" />
     
     <Button
-        android:id="@+id/editmenu_button_changetheme" 
+        android:id="@+id/home_button_changetheme" 
         style="@style/button_base"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:text="Change Theme"/>
     
     <Button
-        android:id="@+id/editmenu_button_minieditor" 
+        android:id="@+id/home_button_minieditor" 
         style="@style/button_base"
         android:layout_alignParentRight="true"
-        android:layout_above="@id/editmenu_button_changetheme"
+        android:layout_above="@id/home_button_changetheme"
         android:text="Mini Editor"/>
     
     <Button
-        android:id="@+id/editmenu_button_scratchboard" 
+        android:id="@+id/home_button_scratchboard" 
         style="@style/button_base"
         android:layout_alignParentRight="true"
-        android:layout_above="@id/editmenu_button_minieditor"
+        android:layout_above="@id/home_button_minieditor"
         android:text="Scratch Board"/>
-
     
+    <Button
+        android:id="@+id/home_button_togglemode" 
+        style="@style/button_base"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/home_button_scratchboard"
+        android:text="Toggle Mode"/>
 </RelativeLayout>

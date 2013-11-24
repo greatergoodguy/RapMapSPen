@@ -12,17 +12,17 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import com.burstingbrains.rapmap.R;
-import com.burstingbrains.rapmap.view.dragdropgrid.DragDropGrid;
+import com.burstingbrains.rapmap.view.dragdropgrid.DragDropGridView;
 import com.burstingbrains.rapmap.view.dragdropgrid.DragDropGridAdapter;
 
 public class RapMapDDGAdapter extends DragDropGridAdapter {
 
     private Context context;
-    private DragDropGrid gridview;
+    private DragDropGridView gridview;
 
     List<RapItemView> itemViews = new ArrayList<RapItemView>();
 
-    public RapMapDDGAdapter(Context context, DragDropGrid gridview) {
+    public RapMapDDGAdapter(Context context, DragDropGridView gridview) {
         super();
         this.context = context;
         this.gridview = gridview;

@@ -35,7 +35,6 @@ import java.util.List;
 import android.content.Context;
 import android.graphics.Point;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.util.SparseIntArray;
 import android.view.Display;
 import android.view.MotionEvent;
@@ -48,7 +47,7 @@ import android.view.animation.Animation;
 import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
 
-public class DragDropGrid extends ViewGroup implements OnTouchListener {
+public class DragDropGridView extends ViewGroup implements OnTouchListener {
 
     private static int ANIMATION_DURATION = 250;
 
@@ -72,34 +71,34 @@ public class DragDropGrid extends ViewGroup implements OnTouchListener {
     private int lastTouchX;
     private int lastTouchY;
 
-    public DragDropGrid(Context context, AttributeSet attrs, int defStyle) {
+    public DragDropGridView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init();
     }
 
-    public DragDropGrid(Context context, AttributeSet attrs) {
+    public DragDropGridView(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
     }
 
-    public DragDropGrid(Context context) {
+    public DragDropGridView(Context context) {
         super(context);
         init();
     }
 
-    public DragDropGrid(Context context, AttributeSet attrs, int defStyle, DragDropGridAdapter adapter) {
+    public DragDropGridView(Context context, AttributeSet attrs, int defStyle, DragDropGridAdapter adapter) {
         super(context, attrs, defStyle);
         this.adapter = adapter;
         init();
     }
 
-    public DragDropGrid(Context context, AttributeSet attrs, DragDropGridAdapter adapter) {
+    public DragDropGridView(Context context, AttributeSet attrs, DragDropGridAdapter adapter) {
         super(context, attrs);
         this.adapter = adapter;
         init();
     }
 
-    public DragDropGrid(Context context, DragDropGridAdapter adapter) {
+    public DragDropGridView(Context context, DragDropGridAdapter adapter) {
         super(context);
         this.adapter = adapter;
         init();
@@ -110,7 +109,7 @@ public class DragDropGrid extends ViewGroup implements OnTouchListener {
             useEditModeAdapter();
         }
 
-        setOnTouchListener(this);
+        setDraggable(true);
     }
 
     private void useEditModeAdapter() {
@@ -677,5 +676,14 @@ public class DragDropGrid extends ViewGroup implements OnTouchListener {
 
     private void tellAdapterToSwapDraggedWithTarget(int dragged, int target) {
         adapter.swapItems(dragged, target);
+    }
+    
+    public void setDraggable(boolean isDraggable) {
+    	if(isDraggable){
+    		setOnTouchListener(this);
+    	}
+    	else{
+    		setOnTouchListener(null);
+    	}
     }
 }
