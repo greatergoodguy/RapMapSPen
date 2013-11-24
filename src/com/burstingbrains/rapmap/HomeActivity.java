@@ -40,5 +40,14 @@ public class HomeActivity extends Activity {
 				startActivityForResult(intent, REQUESTCODE_MINIEDITOR);
 			}
 		});
+		
+		Button scratchboardButton = (Button) findViewById(R.id.editmenu_button_scratchboard);
+		scratchboardButton.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(HomeActivity.this, SPen_Example_ScratchBoard.class);				
+				startActivity(intent);
+			}
+		});
 	}
 }

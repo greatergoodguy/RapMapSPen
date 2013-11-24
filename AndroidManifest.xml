@@ -28,6 +28,10 @@
 			android:hardwareAccelerated="false"
 			android:configChanges="locale|orientation|keyboard|screenSize|keyboardHidden|uiMode"
 			android:theme="@android:style/Theme.Dialog" />
+        
+		<activity android:name="com.burstingbrains.rapmap.SPen_Example_ScratchBoard"
+			android:hardwareAccelerated="false"
+			android:configChanges="locale|orientation|keyboard|screenSize|keyboardHidden|uiMode"/>
             
     </application>
 

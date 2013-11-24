@@ -3,26 +3,34 @@
 
     <com.burstingbrains.rapmap.view.dragdropgrid.DragDropGrid
         android:id="@+id/editmenu_gridview"
-        style="@style/wrap" />
-
-    <Button
-        android:id="@+id/editmenu_button_minieditor" 
         style="@style/wrap"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:text="Mini Editor"/>
+        android:layout_marginRight="200dp" />
+
+    <TextView
+        style="@style/text_header"
+        android:text="EDIT MODE"
+        android:layout_alignParentRight="true" />
     
     <Button
         android:id="@+id/editmenu_button_changetheme" 
-        style="@style/wrap"
+        style="@style/button_base"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:text="Change Theme"/>
     
-    <TextView
-        style="@style/text_header"
-        android:text="EDIT MODE"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/editmenu_button_minieditor" 
+        style="@style/button_base"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/editmenu_button_changetheme"
+        android:text="Mini Editor"/>
+    
+    <Button
+        android:id="@+id/editmenu_button_scratchboard" 
+        style="@style/button_base"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/editmenu_button_minieditor"
+        android:text="Scratch Board"/>
+
     
 </RelativeLayout>

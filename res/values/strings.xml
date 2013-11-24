@@ -78,6 +78,27 @@
 	<string name="type_italic_on_desc">italic is on</string>	
 	<string name="type_italic_off_desc">italic is off</string>		
 	<string name="type_underline_on_desc">underline is on</string>	
-	<string name="type_underline_off_desc">underline is off</string>	
+	<string name="type_underline_off_desc">underline is off</string>
+	
+	
+	<!-- SAMM Option -->	
+	<string name="save_image_horizontal_crop_off">OFF - Do not crop empty space of the left, right side of saving image</string>
+	<string name="save_image_horizontal_crop_on">ON - Crop empty space of the left, right side of saving image</string>
+	<string name="save_image_vertical_crop_off">OFF - Do not crop empty space of the top, bottom side of saving image</string>
+	<string name="save_image_vertical_crop_on">ON - Crop empty space of the top, bottom side of saving image</string>
+	<string name="adjust_saving_contents_by_cropping_off">OFF - Do not adjust contents according to the cropped image</string>
+	<string name="adjust_saving_contents_by_cropping_on">ON - Adjust contents according to the cropped image</string>	
+	<string name="save_only_foreground_image_off">OFF - Save image with its background</string>
+	<string name="save_only_foreground_image_on">ON - Save image with only foreground(transparent background)</string>
+	<string name="create_new_image_off">OFF - Save SAMM data in an exist file</string>
+	<string name="create_new_image_on">ON - Create new image file to save SAMM data</string>
+	<string name="encode_foreground_image_off">OFF - Do not encode foreground image</string>
+	<string name="encode_foreground_image_on">ON - Encode foreground image</string>
+	<string name="encode_thumbnail_image_off">OFF - Do not encode thumbnail image</string>
+	<string name="encode_thumbnail_image_on">ON - Encode thumbnail image</string>
+	<string name="encode_object_data_off">OFF - Do not encode object data</string>
+	<string name="encode_object_data_on">ON - Encode object data</string>
+	<string name="encode_video_file_data_off">OFF - Do not encode video file data</string>
+	<string name="encode_video_file_data_on">ON - Encode video file data</string>	
 
 </resources>
