@@ -12,8 +12,9 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import com.burstingbrains.rapmap.R;
-import com.burstingbrains.rapmap.view.dragdropgrid.DragDropGridView;
+import com.burstingbrains.rapmap.view.RapItemView;
 import com.burstingbrains.rapmap.view.dragdropgrid.DragDropGridAdapter;
+import com.burstingbrains.rapmap.view.dragdropgrid.DragDropGridView;
 
 public class RapMapDDGAdapter extends DragDropGridAdapter {
 

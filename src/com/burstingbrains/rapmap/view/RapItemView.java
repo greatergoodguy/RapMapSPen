@@ -1,12 +1,16 @@
-package com.burstingbrains.rapmap.trunk;
+package com.burstingbrains.rapmap.view;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.burstingbrains.rapmap.HomeActivity;
 import com.burstingbrains.rapmap.R;
+import com.burstingbrains.rapmap.trunk.SPen_Example_ImageClip_MiniEditor;
 
 public class RapItemView extends LinearLayout{
     
@@ -34,8 +38,18 @@ public class RapItemView extends LinearLayout{
 		initView(context);
 	}
 
-	private void initView(Context context) {
+	private void initView(final Context context) {
         View.inflate(context, R.layout.view_rapitem, this);
         nameTV = ((TextView) findViewById(R.id.editmenuitem_name));
+        
+        setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				if(context instanceof Activity){
+					Intent intent = new Intent(context, SPen_Example_ImageClip_MiniEditor.class);
+					((Activity) context).startActivityForResult(intent, HomeActivity.REQUESTCODE_MINIEDITOR);
+				}
+			}
+		});
     }
 }

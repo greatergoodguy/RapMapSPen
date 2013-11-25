@@ -16,7 +16,7 @@ public class HomeActivity extends Activity {
 
 	private enum RapMapMode{ PLAY, EDIT };
 	
-	private static final int REQUESTCODE_MINIEDITOR = 1000;
+	public static final int REQUESTCODE_MINIEDITOR = 1000;
 	
 	RapMapMode mode = RapMapMode.EDIT;
 	
