@@ -1,16 +1,16 @@
 package com.burstingbrains.rapmap.view;
 
 import android.app.Activity;
+import android.app.Dialog;
+import android.app.DialogFragment;
+import android.app.FragmentManager;
 import android.content.Context;
-import android.content.Intent;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.burstingbrains.rapmap.HomeActivity;
 import com.burstingbrains.rapmap.R;
-import com.burstingbrains.rapmap.trunk.SPen_Example_ImageClip_MiniEditor;
 
 public class RapItemView extends LinearLayout{
     
@@ -46,8 +46,12 @@ public class RapItemView extends LinearLayout{
 			@Override
 			public void onClick(View v) {
 				if(context instanceof Activity){
-					Intent intent = new Intent(context, SPen_Example_ImageClip_MiniEditor.class);
-					((Activity) context).startActivityForResult(intent, HomeActivity.REQUESTCODE_MINIEDITOR);
+					//Intent intent = new Intent(context, SPen_Example_ImageClip_MiniEditor.class);
+					//((Activity) context).startActivityForResult(intent, HomeActivity.REQUESTCODE_MINIEDITOR);
+					
+					FragmentManager fm = ((Activity) context).getFragmentManager();
+					DialogFragment miniEditorDialog = new MiniEditorDialog();
+					miniEditorDialog.show(fm, "Mini Editor Dialog Fragment");
 				}
 			}
 		});

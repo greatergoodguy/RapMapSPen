@@ -82,4 +82,9 @@
         <item name="android:layout_width">200dp</item>
     </style>
     
+    <!-- Dialog -->
+    <style name="dialog_theme" parent="@android:style/Theme.Dialog">
+    	<item name="android:windowBackground">@android:color/transparent</item>
+	</style> 
+    
 </resources>
